@@ -14,7 +14,13 @@
                 data-rotate='[ "nicht...", "oder doch?" ]'>
             </span>
         </h1>
-        <canvas id="canvas" width="500" height="500" style="width: 500px; height: 500px;"></canvas>
+        <canvas id="canvas" width="1000" height="1000" style="width: 1000px; height: 1000px;"></canvas>
+        <div id="vid1" class="video">
+            <button type="button" class="kreuz" onclick="hideVid('vid1');">
+                X
+            </button>
+            <video src="./assets/vid/testVid.mov" controls></video>
+        </div>
         <script src="./src/titleControl.js"></script>
         <script src="./src/riveControl.js"></script>
     </body>

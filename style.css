@@ -9,6 +9,42 @@ html,body {
   h1 {
     font-weight: 200;
     margin: 0.4em 0;
+    font-size: 3.5em; 
+    z-index: 0;
   }
-  h1 { font-size: 3.5em; }
+
+  canvas {
+    z-index: 1;
+  }
  
+  .video {
+    visibility: hidden;
+    position: fixed;
+    z-index: 2;
+    object-fit: cover;
+    width: 100vw;
+    height:100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  video {
+    width: 70%;
+    height:70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .kreuz {
+    font-weight: bold;
+    font-size: 100%;
+    color: white;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: rgb(26, 25, 25);
+    position: absolute;
+  }
