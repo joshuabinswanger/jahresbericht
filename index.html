@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://cdn.jsdelivr.net/npm/@rive-app/canvas@latest/rive.js"></script>
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 class="titel">Die UB existiert 
+            <span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='[ "nicht...", "oder doch?" ]'>
+            </span>
+        </h1>
+        <canvas id="canvas" width="500" height="500" style="width: 500px; height: 500px;"></canvas>
+        <script src="./src/titleControl.js"></script>
+        <script src="./src/riveSteuern.js"></script>
+    </body>
+</html>
