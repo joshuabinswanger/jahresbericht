@@ -17,7 +17,7 @@ html,body {
     z-index: 1;
   }
  
-  .video {
+  .popup {
     visibility: hidden;
     position: fixed;
     z-index: 2;
