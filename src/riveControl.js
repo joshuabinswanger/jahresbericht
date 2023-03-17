@@ -1,5 +1,5 @@
 const libraryCanvas = new rive.Rive({
-    src: "./assets/rive/Rive_TestmitLadina.riv",
+    src: "https://nbtkmy.github.io/jahresbericht/assets/rive/Rive_TestmitLadina.riv",
     canvas: document.getElementById("canvas"),
     autoplay: true,
     artboard: "TestmitLadina",
