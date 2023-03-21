@@ -1,4 +1,6 @@
-html,body {
+/* CSS für Responsive (PC) */
+@media screen and (min-width: 481px){
+  html,body {
     font-family: 'Raleway', sans-serif;
     padding: 1em 2em;
     font-size: 18px;
@@ -48,3 +50,59 @@ html,body {
     background: rgb(26, 25, 25);
     position: absolute;
   }
+ }
+
+/* CSS für Responsive (Mobile) */
+@media screen and (max-width: 480px){
+  html,body {
+    font-family: 'Raleway', sans-serif;
+    padding: 1em 2em;
+    font-size: 18px;
+    background: #222;
+    color: #aaa
+  }
+  
+  h1 {
+    font-weight: 200;
+    margin: 0.4em 0;
+    font-size: 3.5em; 
+    z-index: 0;
+  }
+
+  canvas {
+    z-index: 1;
+  }
+ 
+  .popup {
+    visibility: hidden;
+    position: fixed;
+    z-index: 2;
+    object-fit: cover;
+    width: 100vw;
+    height:100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  video {
+    width: 70%;
+    height:70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .kreuz {
+    font-weight: bold;
+    font-size: 100%;
+    color: white;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: rgb(26, 25, 25);
+    position: absolute;
+  }
+ }
+
