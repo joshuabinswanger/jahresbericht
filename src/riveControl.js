@@ -14,6 +14,7 @@ const libraryCanvas = new rive.Rive({
       console.log(newStates);
       newStates.forEach((state) => {
 
+        // Kontrollieren: Link-out 
         if (state.indexOf("Ladina_LinkOut") > -1) {
           const elemId = "popupContent";
           const popupContent = document.getElementById(elemId);
@@ -21,12 +22,12 @@ const libraryCanvas = new rive.Rive({
           popupContent.innerHTML += "<button type='button' class='kreuz' onclick='hideVid(" + elemId + ");'>X</button> \
           <video src='./assets/vid/testVid.mov' controls></video>"
           
-          //Add an else if for all states that should have the 'pointer' cursor
+          //Kontrollieren: Mouse-Pointer-Formen 
         } else if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
           buttonCanvasExample.style.cursor = "pointer";
         } else if (state.indexOf("Daniel_TextBlase_Hover") > -1) {
           buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Betuel_TextBlase_Hover") > -1) {
+        } else if (state.indexOf("Betuel_Textblase_Hover") > -1) {
           buttonCanvasExample.style.cursor = "pointer";
         } else {
           buttonCanvasExample.style.cursor = "default";
@@ -39,8 +40,8 @@ const libraryCanvas = new rive.Rive({
   function hideVid(elm) {
 
     const popupContent = document.getElementById(elm.id);
-    //popupContent.innerHTML = ""; // Dies ist nicht notwendig, solange die ganze Seite reloadet wird
+    popupContent.innerHTML = ""; // Dies ist nicht notwendig, solange die ganze Seite reloadet wird
     popupContent.style.visibility = "hidden";
     // Am besten sollte der Rive-State geändert werden...
-    location.reload(false);
+    //location.reload(false);
   }
