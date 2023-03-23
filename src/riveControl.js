@@ -40,7 +40,7 @@ const libraryCanvas = new rive.Rive({
   function hideVid(elm) {
 
     const popupContent = document.getElementById(elm.id);
-    popupContent.innerHTML = ""; // Dies ist nicht notwendig, solange die ganze Seite reloadet wird
+    popupContent.innerHTML = ""; 
     popupContent.style.visibility = "hidden";
     // Am besten sollte der Rive-State geändert werden...
     //location.reload(false);
