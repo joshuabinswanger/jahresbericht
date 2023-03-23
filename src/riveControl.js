@@ -1,7 +1,7 @@
 
 let buttonCanvasExample = document.getElementById("canvas");
 const libraryCanvas = new rive.Rive({
-    src: "https://nbtkmy.github.io/jahresbericht/assets/rive/ub_jahresbericht_final.riv",
+    src: "https://nbtkmy.github.io/jahresbericht/assets/rive/ub_jahresbericht_final.rev",
     canvas: document.getElementById("canvas"),
     autoplay: true,
     artboard: "TestmitLadina",
@@ -23,6 +23,10 @@ const libraryCanvas = new rive.Rive({
           
           //Add an else if for all states that should have the 'pointer' cursor
         } else if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Daniel_TextBlase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Betuel_TextBlase_Hover") > -1) {
           buttonCanvasExample.style.cursor = "pointer";
         } else {
           buttonCanvasExample.style.cursor = "default";
