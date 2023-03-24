@@ -46,16 +46,19 @@
   }
 
   .kreuz {
-    font-weight: bold;
-    font-size: 100%;
     color: white;
     display: block;
-    width: 30px;
+    width: 5px;
     height: 30px;
+    border-radius: 2.5px;
     background: rgb(26, 25, 25);
     position: absolute;
   }
+
+  .kreuz:hover {
+    cursor: pointer;
  }
+}
 
 /* CSS für Responsive (Mobile) */
 @media screen and (max-width: 480px){
@@ -105,13 +108,12 @@
   }
 
   .kreuz {
-    font-weight: bold;
-    font-size: 100%;
     color: white;
     text-align: center;
     display: block;
-    width: 30px;
+    width: 5px;
     height: 30px;
+    border-radius: 2.5px;
     background: rgb(26, 25, 25);
     position: absolute;
     left: 50%;

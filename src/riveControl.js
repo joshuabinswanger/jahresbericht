@@ -19,7 +19,7 @@ const libraryCanvas = new rive.Rive({
           const elemId = "popupContent";
           const popupContent = document.getElementById(elemId);
           popupContent.style.visibility = "visible";
-          popupContent.innerHTML += "<button type='button' class='kreuz' onclick='hideVid(" + elemId + ");'>X</button> \
+          popupContent.innerHTML += "<span class='kreuz' onclick='hideVid(" + elemId + ");'>X</span> \
           <video src='./assets/vid/testVid.mov' controls></video>"
           
           //Kontrollieren: Mouse-Pointer-Formen 
