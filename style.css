@@ -1,11 +1,16 @@
 
   html,body {
     background: #222;
-    color: #aaa
+    color: #aaa;
+    top: 0px;
+    left: 0px;
+    position: absolute;
   }
   
   canvas {
     z-index: 1;
+    top: -95px;
+    position: absolute;
   }
  
   .popup {
