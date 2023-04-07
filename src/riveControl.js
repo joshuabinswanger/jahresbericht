@@ -1,7 +1,7 @@
 
 let buttonCanvasExample = document.getElementById("canvas");
 const libraryCanvas = new rive.Rive({
-    src: "https://nbtkmy.github.io/jahresbericht/assets/rive/ub_jahresbericht_final.riv",
+    src: "https://dlsubzh.github.io/ubjahresbericht22/assets/rive/ub_jahresbericht_final.riv",
     canvas: document.getElementById("canvas"),
     autoplay: true,
     artboard: "TestmitLadina",
