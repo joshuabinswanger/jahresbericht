@@ -5,7 +5,7 @@ const libraryCanvas = new rive.Rive({
     canvas: document.getElementById("canvas"),
     autoplay: true,
     artboard: "TestmitLadina",
-    stateMachines: ["Ladina_Text_Blase"],
+    stateMachines: ["UBJahresbericht22"],
     onLoad: () => {
       libraryCanvas.resizeDrawingSurfaceToCanvas();
     },
@@ -28,6 +28,26 @@ const libraryCanvas = new rive.Rive({
         } else if (state.indexOf("Daniel_TextBlase_Hover") > -1) {
           buttonCanvasExample.style.cursor = "pointer";
         } else if (state.indexOf("Betuel_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Melanie_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Florian_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Drazen_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Karin_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Elisabeth_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Casanova_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Urs_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Urs_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Martin_Textblase_Hover") > -1) {
+          buttonCanvasExample.style.cursor = "pointer";
+        } else if (state.indexOf("Sybille_Textblase_Hover") > -1) {
           buttonCanvasExample.style.cursor = "pointer";
         } else {
           buttonCanvasExample.style.cursor = "default";
