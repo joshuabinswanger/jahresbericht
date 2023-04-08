@@ -15,7 +15,7 @@ const libraryCanvas = new rive.Rive({
       newStates.forEach((state) => {
           
           //Kontrollieren: Mouse-Pointer-Formen 
-        } else if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
+        if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
           buttonCanvasExample.style.cursor = "pointer";
         } else if (state.indexOf("Daniel_TextBlase_Hover") > -1) {
           buttonCanvasExample.style.cursor = "pointer";
