@@ -4,7 +4,7 @@ const libraryCanvas = new rive.Rive({
     src: "https://dlsubzh.github.io/ubjahresbericht22/assets/rive/ub_jahresbericht_final.riv",
     canvas: document.getElementById("canvas"),
     autoplay: true,
-    artboard: "TestmitLadina",
+    artboard: "UBJahresbericht22",
     stateMachines: ["UBJahresbericht22"],
     onLoad: () => {
       libraryCanvas.resizeDrawingSurfaceToCanvas();
@@ -15,12 +15,12 @@ const libraryCanvas = new rive.Rive({
       newStates.forEach((state) => {
 
         // Kontrollieren: Link-out 
-        if (state.indexOf("Ladina_LinkOut") > -1) {
+        if (state.indexOf("Ruedi_Video_LinkOut") > -1) {
           const elemId = "popupContent";
           const popupContent = document.getElementById(elemId);
           popupContent.style.visibility = "visible";
           popupContent.innerHTML += "<span class='kreuz' onclick='hideVid(" + elemId + ");'>X</span> \
-          <video src='./assets/vid/testVid.mov' controls></video>"
+          <video src="https://player.vimeo.com/video/808776367?h=845b2ca585" controls></video>"
           
           //Kontrollieren: Mouse-Pointer-Formen 
         } else if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
