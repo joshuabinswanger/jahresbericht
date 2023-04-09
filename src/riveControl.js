@@ -21,7 +21,8 @@ const libraryCanvas = new rive.Rive({
           const popupContent = document.getElementById(elemId);
           popupContent.style.visibility = "visible";
           popupContent.innerHTML += "<span class='kreuz' onclick='hideVid(" + elemId + ");'>X</span> \
-          "<video src='https://player.vimeo.com/video/808776367?h=845b2ca585' controls></video>"
+          <iframe src="https://player.vimeo.com/video/808776367?h=845b2ca585" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/808776367">Jahresbericht, Besuch bei Rudi, v2</a> from <a href="https://vimeo.com/fiwiuzh">FIWI_UZH</a> on <a href="https://vimeo.com">Vimeo</a>.</p>"
           
           
           //Kontrollieren: Mouse-Pointer-Formen 
