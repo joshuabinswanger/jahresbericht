@@ -15,7 +15,7 @@ const libraryCanvas = new rive.Rive({
       newStates.forEach((state) => {
           
           
-             Kontrollieren: Link-out 
+            // Kontrollieren: Link-out 
         if (state.indexOf("Ruedi_Video_LinkOut") > -1) {
           const elemId = "popupContent";
           const popupContent = document.getElementById(elemId);
