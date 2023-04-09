@@ -14,6 +14,16 @@ const libraryCanvas = new rive.Rive({
       console.log(newStates);
       newStates.forEach((state) => {
           
+          
+             Kontrollieren: Link-out 
+        if (state.indexOf("Ruedi_Video_LinkOut") > -1) {
+          const elemId = "popupContent";
+          const popupContent = document.getElementById(elemId);
+          popupContent.style.visibility = "visible";
+          popupContent.innerHTML += "<span class='kreuz' onclick='hideVid(" + elemId + ");'>X</span> \
+          "<video src='https://player.vimeo.com/video/808776367?h=845b2ca585' controls></video>"
+          
+          
           //Kontrollieren: Mouse-Pointer-Formen 
         if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
           buttonCanvasExample.style.cursor = "pointer";
