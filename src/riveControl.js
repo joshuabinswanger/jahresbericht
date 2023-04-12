@@ -14,37 +14,8 @@ const libraryCanvas = new rive.Rive({
       console.log(newStates);
       newStates.forEach((state) => {
           
-          
           //Kontrollieren: Mouse-Pointer-Formen 
-        if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Daniel_TextBlase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Betuel_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Melanie_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Florian_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Drazen_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Karin_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Elisabeth_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Casanova_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Urs_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Urs_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Martin_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Sybille_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else {
-          buttonCanvasExample.style.cursor = "default";
-        }
+           buttonCanvasExample.style.cursor = "pointer";
       });
     }
   });
