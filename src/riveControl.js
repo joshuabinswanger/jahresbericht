@@ -23,8 +23,8 @@ const libraryCanvas = new rive.Rive({
           popupContent.style.visibility = "visible";
           
         // Kontrollieren: Link-out andere Webseite öffnen
-        } else if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
-          window.open("https://www.ub.uzh.ch/de.html", "_blank");
+        } else if (state.indexOf("Kurier_LinkOut") > -1) {
+          window.open("https://www.uzh.ch/blog/ub/2023/04/12/einer-fuer-alle-der-ub-zb-kurier/", "_blank");
 
         //Kontrollieren: Solange der Mouse Pointer auf dem Canvas kommt, wird der Pointer-Form geändert
         } else {
