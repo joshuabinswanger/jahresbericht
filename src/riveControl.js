@@ -1,11 +1,12 @@
 
 let buttonCanvasExample = document.getElementById("canvas");
+
 const libraryCanvas = new rive.Rive({
-    src: "https://nbtkmy.github.io/jahresbericht/assets/rive/ub_jahresbericht_final.riv",
+    src: "https://dlsubzh.github.io/ubjahresbericht22/assets/rive/ub_jahresbericht_final.riv",
     canvas: document.getElementById("canvas"),
     autoplay: true,
-    artboard: "TestmitLadina",
-    stateMachines: ["Ladina_Text_Blase"],
+    artboard: "UBJahresbericht22",
+    stateMachines: ["UBJahresbericht22"],
     onLoad: () => {
       libraryCanvas.resizeDrawingSurfaceToCanvas();
     },
@@ -13,35 +14,30 @@ const libraryCanvas = new rive.Rive({
       const newStates = riveEvent.data;
       console.log(newStates);
       newStates.forEach((state) => {
+        
+        // Kontrollieren: Link-out für Vimeo
+        if (state.indexOf("Ruedi_Video_LinkOut") > -1) {
 
-        // Kontrollieren: Link-out 
-        if (state.indexOf("Ladina_LinkOut") > -1) {
           const elemId = "popupContent";
           const popupContent = document.getElementById(elemId);
           popupContent.style.visibility = "visible";
-          popupContent.innerHTML += "<span class='kreuz' onclick='hideVid(" + elemId + ");'>X</span> \
-          <video src='./assets/vid/testVid.mov' controls></video>"
           
-          //Kontrollieren: Mouse-Pointer-Formen 
+        // Kontrollieren: Link-out andere Webseite öffnen
         } else if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Daniel_TextBlase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
-        } else if (state.indexOf("Betuel_Textblase_Hover") > -1) {
-          buttonCanvasExample.style.cursor = "pointer";
+          window.open("https://www.ub.uzh.ch/de.html", "_blank");
+
+        //Kontrollieren: Solange der Mouse Pointer auf dem Canvas kommt, wird der Pointer-Form geändert
         } else {
-          buttonCanvasExample.style.cursor = "default";
+          buttonCanvasExample.style.cursor = "pointer";
         }
       });
-    }
-  });
+      }
+    });
 
 
-  function hideVid(elm) {
+  function hideVid() {
 
-    const popupContent = document.getElementById(elm.id);
-    popupContent.innerHTML = ""; 
+    const popupContent = document.getElementById("popupContent");
     popupContent.style.visibility = "hidden";
-    // Am besten sollte der Rive-State geändert werden...
-    //location.reload(false);
+
   }
