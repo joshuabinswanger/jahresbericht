@@ -4,12 +4,25 @@
         <meta charset="UTF-8">
         <script src="https://cdn.jsdelivr.net/npm/@rive-app/canvas@latest/rive.js"></script>
         <link href="./style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <canvas id="canvas"></canvas>
-        <div id="popupContent" class="popup">
-        </div>
+        <!-- Für Loader -->
+        <div class="lds-ellipsis" id="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        
+        <!-- Inhalt -->
+        <main>
+            <canvas id="canvas"></canvas>
+
+            <!-- Vimeo Popup -->
+            <div id="popupContent" class="popup">
+                <span class='kreuz material-icons' onclick='hideVid();'>close</span>
+                <iframe title='vimeo-player' src='https://player.vimeo.com/video/783453912?h=b9260604e5' \
+                width='640' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </main>
         <script src="./src/style.js"></script>
         <script src="./src/riveControl.js"></script>
+        <script src="./src/loader.js"></script>
     </body>
 </html>

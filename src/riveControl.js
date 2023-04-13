@@ -15,30 +15,29 @@ const libraryCanvas = new rive.Rive({
       console.log(newStates);
       newStates.forEach((state) => {
         
-        //Kontrollieren: Solange der Mouse Pointer auf dem Canvas kommt, wird der Pointer-Form geändert
-        buttonCanvasExample.style.cursor = "pointer";
-        
-        // Kontrollieren: Link-out 
-        if (state.indexOf("Ruedi_LinkOut") > -1) {
-          
+        // Kontrollieren: Link-out für Vimeo
+        if (state.indexOf("Ruedi_Video_LinkOut") > -1) {
+
           const elemId = "popupContent";
           const popupContent = document.getElementById(elemId);
           popupContent.style.visibility = "visible";
-          popupContent.innerHTML += "<span class='kreuz' onclick='hideVid(" + elemId + ");'>X</span> \
-          <video src='./assets/vid/testVid.mov' controls></video>"
           
+        // Kontrollieren: Link-out andere Webseite öffnen
         } else if (state.indexOf("Ladina_TextBlase_Hover") > -1) {
+          window.open("https://www.ub.uzh.ch/de.html", "_blank");
+
+        //Kontrollieren: Solange der Mouse Pointer auf dem Canvas kommt, wird der Pointer-Form geändert
+        } else {
           buttonCanvasExample.style.cursor = "pointer";
-        } 
+        }
       });
       }
     });
 
 
-  function hideVid(elm) {
+  function hideVid() {
 
-    const popupContent = document.getElementById(elm.id);
-    popupContent.innerHTML = ""; 
+    const popupContent = document.getElementById("popupContent");
     popupContent.style.visibility = "hidden";
 
   }
