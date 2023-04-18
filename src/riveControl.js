@@ -27,7 +27,7 @@ const libraryCanvas = new rive.Rive({
           window.open("https://www.uzh.ch/blog/ub/2023/04/12/einer-fuer-alle-der-ub-zb-kurier/", "_blank");
 
         } else if (state.indexOf("Jan_LinkOut") > -1) {
-          window.open("(https://www.ub.uzh.ch/de/ub-besuchen/veranstaltungen-ausstellungen/hs21-buecher_daten_raeume.html", "_blank");
+          window.open("https://www.ub.uzh.ch/de/ub-besuchen/veranstaltungen-ausstellungen/hs21-buecher_daten_raeume.html", "_blank");
 
         } else if (state.indexOf("Feb_LinkOut") > -1) {
           window.open("https://www.ub.uzh.ch/de/ueber-die-ub/news/ausstellung-zaehneputzen.html", "_blank");
